@@ -27,7 +27,7 @@ SPECTRED_PID=$!
 sleep 3
 kill $SPECTRED_PID
 cd #HOME
-wget https://spectre-network.org/downloads/datadir2.zip
+wget https://spectre-network.org/downloads/legacy/datadir2.zip
 unzip datadir2.zip -d ./.spectred/spectre-mainnet
 cd ~/bin
 screen -dmS spe bash -c './spectred --utxoindex'
